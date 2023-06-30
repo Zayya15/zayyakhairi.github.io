@@ -14,7 +14,7 @@
     background-color:  darkorange;
     border-radius: 10px;
     height: 444px;
-    overflow: hidden;
+    transform-style: preserve-3d;
 }
 
 .keyboard-box::before {
@@ -25,14 +25,13 @@
     font-weight: bold;
     font-style: italic;
     top: 8%;
-    left: -100%;
+    left: 50%;
+    transform: translate(-50%, 0);
     opacity: 0;
     transition: 0.5s;
 }
 
 .keyboard-box:hover::before {
-    left: 50%;
-    transform: translate(-50%, 0);
     opacity: 0.3;
 }
 
@@ -43,15 +42,14 @@
     font-size: 3.2em;
     font-weight: bold;
     font-style: italic;
-    top: 64%;
-    left: 500px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 .keyboard-box:hover::after {
-    left: 50%;
-    transform: translate(-50%, 0);
     opacity: 0.3;
 }
 
@@ -64,10 +62,11 @@
     font-size: 1.5em;
     opacity: 0;
     transition: 0.5s;
+    transform: translate3d(0, 0, 40px);
 }
 
 .keyboard-box:hover .keyboard-name {
-    top: 5px;
+    top: 30px;
     opacity: 0.8;
 
 }
@@ -76,7 +75,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate3d(-50%, 0, 100px);
     opacity: 0;
     transition: 0.5s;
 }
@@ -90,11 +89,11 @@
     position: absolute;
     top: -10%;
     left: 50%;
-    transform: translate(-50%, 52%);
+    transform: translate3d(-50%, 52%, 100px);
     max-width: 300px;
     transition: 0.5s;
 }
 
 .keyboard-box:hover .keyboard-img {
-    transform: translate(-50%, 38%) rotate(5deg) scale(1.1);
+    transform: translate3d(-50%, 38%, 100px) rotate(5deg) scale(1.1);
 }

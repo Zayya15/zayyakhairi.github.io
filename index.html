@@ -127,6 +127,20 @@
         <a href="#" class="btn btn-light keyboard-details-button">Show Details</a>
       </div>
     </div>
+    <div class="col-md-5 col-lg-4 mb-3">
+      <div class="keyboard-box">
+        <h4 class="keyboard-name">Womier RGB</h4>
+        <img src="img/keyboards/1.png" alt="Womier RGB" class="keyboard-img">
+        <a href="#" class="btn btn-light keyboard-details-button">Show Details</a>
+      </div>
+    </div>
+    <div class="col-md-5 col-lg-4 mb-3">
+      <div class="keyboard-box">
+        <h4 class="keyboard-name">Red Dragon</h4>
+        <img src="img/keyboards/2.png" alt="Red Dragon" class="keyboard-img">
+        <a href="#" class="btn btn-light keyboard-details-button">Show Details</a>
+      </div>
+    </div>
   </div>
 </div>
 </section>
@@ -234,9 +248,11 @@
 
 <script type="text/javascript" src="js/raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.min.js"></script>
 <script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".keyboard-box"), {
+	VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
 		max: 25,
-		speed: 400
+		speed: 500,
+    scale: 1.1,
+    glare: true,
 	});
 </script>
 
